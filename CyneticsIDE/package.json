@@ -1,0 +1,45 @@
+{
+  "name": "cynetics-ide",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "check-types": "tsc --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "check-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "@vercel/analytics": "^1.1.1",
+    "axios": "^1.6.2",
+    "classnames": "^2.3.2",
+    "framer-motion": "^10.16.4",
+    "monaco-editor": "^0.44.0",
+    "next": "14.0.3",
+    "next-auth": "^4.24.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "socket.io-client": "^4.7.2",
+    "stripe": "^14.5.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.3.2",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.39",
+    "@types/react-dom": "^18.2.17",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8.4.31"
+  }
+} 
